@@ -8,6 +8,7 @@ module.exports = {
   devServer: {
     port: 3000,
     static: './dist',
+    historyApiFallback: true,
   },
   output: {
     publicPath: 'auto',
@@ -27,6 +28,7 @@ module.exports = {
       name: 'app_shell',
       remotes: {
         app_products: 'app_products@http://localhost:3001/remoteEntry.js',
+        user_angel: 'user_angel@http://localhost:3002/remoteEntry.js',
       },
       shared: {
         react: { singleton: true, requiredVersion: '^19.1.1' },

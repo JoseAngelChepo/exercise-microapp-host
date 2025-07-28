@@ -6,7 +6,7 @@ const Products = () => {
 	return (
 		<>
 			<h2>Products section</h2>
-			<Suspense fallback={<p>Cargando products app...</p>}>
+			<Suspense fallback={<p>Cargando products app ....</p>}>
 				<ProductsApp />
 			</Suspense>
 		</>
